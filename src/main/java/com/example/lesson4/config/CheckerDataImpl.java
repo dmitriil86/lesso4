@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Order(3)
 @AllArgsConstructor
-@LogTransformation
+@LogTransformation("./CheckerLogs")
 public class CheckerDataImpl implements CheckerInterface {
 
     private final ReaderWriterInterface readerWriterInterface;

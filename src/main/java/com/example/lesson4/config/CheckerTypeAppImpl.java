@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Order(2)
-@LogTransformation
+@LogTransformation("./CheckerLogs")
 public class CheckerTypeAppImpl implements CheckerInterface {
     @Override
     public String[] check(String[] str) {

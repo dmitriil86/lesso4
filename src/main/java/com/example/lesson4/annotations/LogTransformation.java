@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface LogTransformation {
 
-    String value() default "LogInfoOperations.txt";
+    String value() default "${file.path.defaultCheckerLog}";
 }

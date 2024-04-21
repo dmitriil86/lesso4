@@ -7,7 +7,7 @@ import org.springframework.util.StringUtils;
 
 @Service
 @Order(1)
-@LogTransformation("d:/file/logTest.txt")
+@LogTransformation("./CheckerLogs")
 public class CheckeFioImpl implements CheckerInterface {
     @Override
     public String[] check(String[] str) {
